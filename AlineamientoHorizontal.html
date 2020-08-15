@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<title>Alineamiento Horizontal</title>
+	<style>
+		.row{	
+			background: #e8e8e8;
+			margin: 20px 0;
+		}
+		.columna {
+			background: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #4D5061;
+		}
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Alineamiento de columnas Horizontalmente</h1>
+
+		<p>Estos atributos deben colocarse en las filas que contienen a los atributos</p>
+
+		<h1>Las columnas juntas</h1>
+
+		<li>justify-content-start</li>
+
+		<div class="row justify-content-start">
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		<li>justify-content-center</li>
+		<div class="row justify-content-center">
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+		<li>justify-content-end</li>
+		<div class="row justify-content-end">
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		<h1>Crear una columna de salto</h1>
+		<p>Esta columna crea un salto de linea a las siguientes columnas se coloca dentro de la <span class="text-info">row</span> y se coloca unicamente con el atributo:</p>
+		<li>w-100</li>
+		<div class="row">
+			<div class="w-100"></div>
+		</div>
+		
+		<h1>Con las columnas dispersas</h1>
+		<li>justify-content-around</li>
+		<div class="row justify-content-around">
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+		<li>justify-content-between</li>
+		<div class="row justify-content-between">
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+	</div>
+
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

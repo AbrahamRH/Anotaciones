@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>Responsive utilities</title>
+	<style>
+		/* .row{	
+			background: #e8e8e8;
+			margin: 40px 0;
+		} */
+
+		.columna {
+			background: #2191fb;
+			color: #FFF;
+			text-align: center;
+			padding: 20px;
+			margin-bottom: 20px;
+			border: 1px solid #4D5061;
+		}
+
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+		h1 {
+			margin: 20px 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Utilidades para el diseño responsivo</h1>
+		<p>
+			Es necesario colocar la misma columna que se desea modificar varias veces, cambiando unicamente el atributo de tamaño
+			en la columna para mostrarse en cada tipo de dispositivo.
+		</p>
+		<p>
+			Los atributos utilizados son:
+		</p>
+		<ul>
+			<li><strong>d-none:</strong>  
+				Este atributo hace que no se muestre el elemento en pantalla, se pueden utilizar en distintos tamaños por ejemplo: <em>d-sm-none</em>. 
+			</li>
+			<li>
+				<strong>d-block:</strong>  
+				Este atributo permite mostrar el elemento en pantalla, se pueden ocupar en distintos tamaños por ejemplo: <em>d-sm-block</em>.
+			</li>
+		</ul>
+		<p>
+			Para usar estas utilerias es importante crear varias veces el elemento que se desea modificar de acuerdo a los tamaños 
+			para despues cambiar estos atributos en cada uno, deacuerdo a los tamaños que se deseen mostrar.
+		</p>
+		<p class="text-danger">
+			<strong>Nota*:</strong> 
+			Utiliza la herramienta para inspeccionar la página para ver los cambios en la columna de abajo de acuerdo a su tamaño, asi como sus atributos utilizados.
+		</p>
+
+		<div class="row">
+			<div class="columna col d-block d-sm-none">XS - Extra small</div>
+			<div class="columna col d-none d-sm-block d-md-none">SM - Small</div>
+			<div class="columna col d-none d-md-block d-lg-none">MD - Medium</div>
+			<div class="columna col d-none d-lg-block d-xl-none">LG - Large</div>
+			<div class="columna col d-none d-xl-block">XL - Extra large</div>
+
+			<div class="columna col d-block d-sm-none">d-block d-sm-none</div>
+			<div class="columna col d-none d-sm-block d-md-none">d-none d-sm-block d-md-none</div>
+			<div class="columna col d-none d-md-block d-lg-none">d-none d-md-block d-lg-none</div>
+			<div class="columna col d-none d-lg-block d-xl-none">d-lg-block d-xl-none</div>
+			<div class="columna col d-none d-xl-block">d-none d-xl-block</div>
+		</div>
+	</div>
+
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

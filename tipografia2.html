@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>Tipografia y texto</title>
+	<style>
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<div class="row">
+			<div class=" col">
+				<h1>Tipografias y textos 2</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class=" col-12">
+				<h2>Etiquetas de marcado</h2>
+				<p>Estas etiquetas funcionan para darles un nuevo formato al texto.</p>
+				<li class="text-info">mark: <span class="text-dark">Marca el texto encerrado con un color amarillento.</span></li>
+				<p> <mark>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ex aliquid dolore voluptates iste</mark> </p>
+				<li class="text-info">del: <span class="text-dark">Tacha el texto encerrado en la etiqueta.</span></li>
+				<p> <del>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ex aliquid dolore voluptates iste</del> </p>
+				<li class="text-info">s: <span class="text-dark">Tacha el texto encerrado en la etiqueta.</span></li>
+				<p><s>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ex aliquid dolore voluptates iste</s> </p>
+				<li class="text-info">ins: <span class="text-dark">Subraya el texto encerrado.</span></li>
+				<p><ins>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ex aliquid dolore voluptates iste</ins></p>
+				<li class="text-info">u: <span class="text-dark">Subraya el texto encerrado.</span></li>
+				<p><u>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ex aliquid dolore voluptates iste</u></p>
+				<li class="text-info">strong: <span class="text-dark">Pone en negritas el texto encerrado.</span></li>
+				<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ex aliquid dolore voluptates iste</strong></p>
+				<li class="text-info">em: <span class="text-dark">Coloca en itálicas el texto encerrado</span></li>
+				<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ex aliquid dolore voluptates iste</em></p>
+				<li class="text-info">small: <span class="text-dark">Reduce el tamaño del texto encerrado.</span></li>
+				<p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ex aliquid dolore voluptates iste</small></p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<h2 class="w-100">Clases para la alineación y utilerias</h2>
+			<!-- Texto justificado -->
+			<div class="col-12 col-lg-4">
+				<li class="text-primary">text-justify: <span class="text-dark">Justifica el texto del contenedor.</span></li>
+				<br>
+				<p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, velit iure totam consequatur hic omnis sapiente quasi 
+					 iusto nemo. Praesentium aut culpa adipisci reiciendis dolore, corporis quisquam recusandae cum deleniti?</p>
+			</div>
+			<!-- Carta -->
+			<div class="col-12 col-lg-8">
+				<li class="text-primary">card: <span class="text-dark">Crea un contenedor al estilo de una carta, al parrafo del cuerpo <span class="text-info">(div)</span> se le coloca el atributo <span class="text-info">card-body</span>.</span></li>
+				<br>
+				<div class="card">
+					<div class="card-body">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam quam corrupti, provident in vel neque quae repellendus, quaerat eos sunt laboriosam maiores vero deleniti nostrum ea voluptates iste dolorum.
+					</div>
+				</div>
+			</div>
+			<!-- Alineación de texto -->
+			<div class="col-12">
+				<li class="text-primary">text-(left/center/right): <span class="text-dark">Alinea el texto segun la posición que se le indique, esto tambien sirve al ajustar en distintos dispositivos usando las respectivas clases como: <span class="text-info">text-md-right</span>.</span></li>
+				<br>
+				<p class="text-left">Texto alineado a la izquierda.</p>
+				<p class="text-center">Texto alineado al centro.</p>
+				<p class="text-right">Texto alineado a la derecha.</p>
+				<hr>
+			</div>
+			<h2 class="w-100">Capitalización de letras y formato</h2>
+			<div class="col-4">
+				<li class="text-primary">text-lowercase</li>
+				<p class="text-lowercase">Lorem ipsum dolor sit.</p>
+				<li class="text-primary">font-weight-bold</li>
+				<p class="font-weight-bold">Lorem ipsum dolor sit.</p>
+			</div>
+			<div class="col-4">
+				<li class="text-primary">text-uppercase</li>
+				<p class="text-uppercase">Lorem ipsum dolor sit.</p>
+				<li class="text-primary">font-weight-normal</li>
+				<p class="font-weight-normal">Lorem ipsum dolor sit.</p>
+			</div>
+			<div class="col-4">
+				<li class="text-primary">text-capitalize</li>
+				<p class="text-capitalize">Lorem ipsum dolor sit.</p>
+				<li class="text-primary">font-italic</li>
+				<p class="font-italic">Lorem ipsum dolor sit.</p>
+			</div>
+			<h2 class="w-100">
+				<hr>
+				Citas de texto
+			</h2>
+
+		</div>
+	</div>
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

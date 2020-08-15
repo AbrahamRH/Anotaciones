@@ -1,0 +1,5 @@
+.col 			Extra pequeño (XE) - Smartphones verticales  < 544px
+.col-sm   Pequeño (Small)    - Smartphones Horizontal  > 544px y < 768px
+.col-md   Mediano (Medium)   - Tablets								 > 768px y < 992px
+.col-lg   Largo (Large)      - Computadoras            > 992px y < 1200px
+.col-xl   Extra largo (XL)   - Computadoras 					 > 1200px
