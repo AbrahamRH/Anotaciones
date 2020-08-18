@@ -7,11 +7,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<title></title>
 	<style>
-		/* .row{	
-			background: #e8e8e8;
-			margin: 40px 0;
-		} */
-
 		.columna {
 			background: #f2f2f2;
 			padding: 10px;
@@ -78,8 +73,30 @@
 				<img src="http://lorempixel.com/800/100" alt="imagen" class="img-fluid">
 			</div>
 		</div>
+		<div class="row">
+			<div class="col">
+				<br><hr>
+				<h2>Múltiples imágenes</h2>
+				<p>Se pueden tener varias imagenes en la misma columna y para poder posicionarlas utilizamos la clase <code>float-(left/right)</code></p>
+			</div>
+		</div>
+		<div class="row no-gutters">
+			<div class="columna col-6">
+				<img src="http://lorempixel.com/200/300" alt="imagen" class="float-left">
+				<img src="http://lorempixel.com/200/300" alt="imagen" class="float-right">
+			</div>
+			<div class="col-6 align-self-center">
+				<p class="text-justify pl-4">
+					Aqui se puede mostrar como la primer imagen es puesta a la izquierda con <code>float-left</code> y la segunda es empujada a la derecha con 
+					<code>float-right</code>.
+				</p>
+			</div>
+		</div>
 
 	</div>
+
+
+	<footer class="row py-5 my-5"></footer>
 
 <!-- JS, Popper.js, and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
