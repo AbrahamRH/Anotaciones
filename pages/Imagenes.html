@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title></title>
+	<style>
+		/* .row{	
+			background: #e8e8e8;
+			margin: 40px 0;
+		} */
+
+		.columna {
+			background: #f2f2f2;
+			padding: 10px;
+			border: 1px solid #4D5061;
+		}
+
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- Titulo -->
+			<div class="col-12">
+				<h1 class="display-4">Imágenes</h1>
+				<p>Para eliminar el padding por defecto de los contenedores, en este caso, de la imágen, se utiliza la clase <code>no-gutters</code>.</p>
+				<p class="text-danger">
+					<strong>Nota*:</strong> 
+					Esta clase se debe usar dentro de la <span class="info">row</span> de el contenido y no es unicamente para imágenes.
+				</p>
+			</div>
+		</div>
+		<!-- Sin no-gutters -->
+		<div class="row">
+			<div class="columna col-6">
+				<img src="http://lorempixel.com/200/200" alt="imagen">
+			</div>
+			<div class="col-6 align-self-center">
+				<p class="text-muted">Columna con el padding predeterminado.</p>
+			</div>
+		</div>
+		<br>
+		<!-- Con no-gutters -->
+		<div class="row no-gutters">
+			<div class="columna col-6">
+				<img src="http://lorempixel.com/200/200" alt="imagen">
+			</div>
+			<div class="col-6 align-self-center">
+				<p class="text-muted pl-3"> Columna sin el padding predeterminado con la clase <code>no-gutters</code>.</p>
+			</div>
+		</div>
+		<!-- Adapta al ancho -->
+		<div class="row no-gutters">
+			<div class="col-12">
+				<br><hr>
+				<h2>Ajuste de imágenes</h2>
+				<p>
+					Para ajustar una imagen al ancho total de una columna, dentro de la etiqueta <span class="text-info">&lt;img&gt;</span>
+					debe contener la clase <code>img-fluid</code> para ajustarse a el ancho del contenedor padre.
+				</p>
+				<p>
+					Se muestra en las imagenes siguientes, como la primera por tener un ancho de 800px
+					se extiende mas de las 4 columnas asignadas, mientras la segunda imagen se ajusta al tamaño de las columnas.
+				</p>
+			</div>
+			<div class="columna col-4">
+				<img src="http://lorempixel.com/800/100" alt="imagen" class="no-gutters">
+			</div>
+			<div class="w-100"><br></div>
+			<div class="columna col-4">
+				<img src="http://lorempixel.com/800/100" alt="imagen" class="img-fluid">
+			</div>
+		</div>
+
+	</div>
+
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
