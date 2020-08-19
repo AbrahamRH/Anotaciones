@@ -28,8 +28,83 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class=" col"></div>
+			<div class="col">
+				<h1 class="display-4">Tablas</h1>
+				<p>
+					Las tablas nos ayudan a vizualizar datos de manera rápida, el diseño de las tablas se dda aplicando la clase 
+					<code>table</code> dentro de la etiqueta <span class="text-info">&lt;table&gt;</span>, al aplicar esta clase, a
+					todos los elementos de la tabla se le aplicaran los estilos.
+				</p>
+				<p>Existen distintos clases que se le pueden aplicar a la tabla como son:</p>
+				<ul>
+					<li><code>table-dark</code>: Nos permite cambiar los colores de la tabla a colores oscuros.</li>
+					<li><code>table-striped</code>: Nos permite alterar los colores entre cada fila.</li>
+					<li><code>table-bordered</code>: Nos permite agregarle bordes a la tabla.</li>
+					<li><code>table-hover</code>: Nos permite agregarle un efecto de hover a las filas.</li>
+					<li><code>table-sm</code>: Elimina los paddings de la tabla haciendola más pequeña.</li>
+					<li><code>table-responsive-xx</code>: Nos permite adaptar nuestras tablas a dispositovos de distintos tamaños.</li>
+				</ul>
+			</div>
 		</div>
+		<div class="row">
+			<div class=" col">
+				<table class="table table-striped table-dark table-bordered table-hover table-responsive-md">
+					<thead>
+						<th>Nombre</th>
+						<th>Edad</th>
+						<th>Pais</th>
+					</thead>
+					<tr>
+						<td>Carlos</td>
+						<td>21</td>
+						<td>México</td>
+					</tr>
+					<tr>
+						<td>Alejandro</td>
+						<td>34</td>
+						<td>España</td>
+					</tr>
+					<tr>
+						<td>Cesar</td>
+						<td>37</td>
+						<td>Colombia</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<br><hr>
+				<h2>Colores de las filas</h2>
+				<p>
+					Para colocar colores en las filas es necesario colocar dentro de la etiqueta 
+					<span class="text-info">&lt;tr&gt;</span> la clase <code>table-xxxxx</code>, donde xxxxx es el color 
+					los distintos tipos de colores son:
+				</p>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col">
+					<table class="table">
+						<tr class="table-success"> <td>table-succes</td>	</tr>
+						<tr class="table-active"><td>table-active</td></tr>
+						<tr class="table-warning"><td>table-warning</td></tr>
+						<tr class="table-info"><td>table-info</td></tr>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<p class="text-danger">
+						<strong>Nota*:</strong> 
+						Puede utilizarse tambien la clase <code>bg-xxxx</code> para poner de fonde de una fila el color.
+					</p>
+
+				</div>
+			</div>
+		</div>
+
+		<footer class="row py-5 my-5"></footer>
 	</div>
 
 <!-- JS, Popper.js, and jQuery -->
