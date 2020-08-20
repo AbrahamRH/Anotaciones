@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>Alertas</title>
+	<style>
+		/* .row{	
+			background: #e8e8e8;
+			margin: 40px 0;
+		}
+
+		.columna {
+			background: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #4D5061;
+		} */
+
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<div class="row">
+			<div class="col">
+				<h1 class="display-4">Componentes <small class="text-primary">Alertas</small></h1>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<p>
+					Las alertas se crean con la clase <code>alert</code>, Se le pueden añadir estilos de boostrap con la 
+					clase <code>alert-xxxx</code> donde pueden ser, <code>success</code>,<code>info</code>, <code>warning</code>, <code>danger</code>, etc.
+				</p>
+				<p>A las alertas se le pueden incluir cualquier otra etiqueta de HTML, para resaltar, o dar un enfasis en alguna parte de 
+					ella, como el subrayado o las negritas.</p>
+				<div class="alert alert-success my-3">
+					<u>Lorem</u> ipsum dolor sit <strong>amet</strong> consectetur adipisicing elit. A, magnam.
+				</div>
+				<p>Si se pone un link en las alertas tambien se puede usar la clase <code>alert-link</code>.</p>
+				<div class="alert alert-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#" class="alert-link">Vitae, soluta?</a>	</div>
+				<p>Se puede hacer una alerta con la opción de cerrarla utilizando <span class="text-secondary">JavaScript</span>.</p>
+				<!-- Alerta que se puede cerrar -->
+				<div class="alert alert-danger" id="alerta">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?
+					<button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<h2>Código</h2>
+
+<pre>
+<code>
+&lt;div class="alert alert-danger" id="alerta"&gt;
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nemo?
+	&lt;button type="button" class="close" data-dismiss="alert" aria-label="Cerrar"&gt;
+		&lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+	&lt;/button&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class=" col"></div>
+		</div>
+	</div>
+
+
+	<footer class="row py-5 my-5"></footer>
+
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
