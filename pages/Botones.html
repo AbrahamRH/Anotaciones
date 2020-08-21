@@ -115,7 +115,46 @@
 		<!-- Parte 2 -->
 		<div class="row justify-content-center">
 			<div class="col-12">
-
+				<hr>
+				<h2>Botones con Checkbox y Radio buttons</h2>
+				<p>
+					Los estilos de botones tambien pueden ser aplicados a distintas etiquetas que no necesariamente sean botones, 
+					como lo son los checkbox y los radio buttons, para hacerlo se necesitan las clases <code>btn-group</code>, <code>btn-group-toggle</code>, 
+					y el atributo <span class="text-primary">data-toggle</span>; dentro de este contenedor se abrega el checkbox, dentro de una etiqueta 
+					<span class="text-info">&lt;label&gt;</span>, y en esta etiqueta se colocaran as clases <code>btn</code> y <code>btn-xxxxx</code>.
+				</p>
+				<p>
+					<pre><code>&lt;div class="btn-group btn-group-toggle" data-toggle="buttons"&gt;</code></pre>
+				</p>
+			</div>
+			<div class="col-12 col-md-6 text-center">
+				<h3>Checkbox</h3>
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="checkbox" autocomplete="off"> Checkbox 1
+					</label>	
+					<label class="btn btn-primary">
+						<input type="checkbox" autocomplete="off"> Checkbox 2
+					</label>	
+					<label class="btn btn-primary">
+						<input type="checkbox" autocomplete="off"> Checkbox 2
+					</label>	
+				</div>
+			</div>
+			<div class="w-100 d-md-none d-block"><br></div>
+			<div class="col-12 col-md-6 text-center">
+				<h3>Radio buttons</h3>
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					<label class="btn btn-primary">
+						<input type="radio"  name="radio" autocomplete="off"> radio 1
+					</label>	
+					<label class="btn btn-primary">
+						<input type="radio"  name="radio" autocomplete="off"> radio 2
+					</label>	
+					<label class="btn btn-primary">
+						<input type="radio" name="radio"  autocomplete="off"> radio 2
+					</label>	
+				</div>
 			</div>
 		</div>
 
