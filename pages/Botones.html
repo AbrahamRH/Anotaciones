@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>Botones</title>
+	<style>
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1 class="display-4">Componentes <small class="text-primary">Botones</small></h1>
+				<hr>
+			</div>
+		</div>
+		<!-- Parte 1 -->
+		<div class="row justify-content-center">
+			<!-- Colores -->
+			<div class="col-12">
+				<p>
+					Bootstrap nos brinda la opción de crear botones gracias a la clase <code>btn</code> que debe estar dentro de la etiqueta 
+					<span class="text-info">&lt;button&gt;</span>, tambien podemos tener distintos tipos de colores en los botones, veasé en <a href="./colores.html" class="alert-link">colores</a>.
+				</p>
+			</div>
+			<div class="col-6 text-center">
+				<button class="btn btn-primary">btn-primary</button>
+				<button class="btn btn-secondary">btn-secondary</button>
+				<button class="btn btn-success">btn-succcess</button>
+				<button class="btn btn-info">btn-info</button>
+				<button class="btn btn-warning">btn-warning</button>
+				<button class="btn btn-danger">btn-danger</button>
+				<button class="btn btn-link">btn-link</button>
+			</div>
+			<div class="w-100"></div>
+			<!-- Distintos botones -->
+			<div class="col-12">
+				<hr>
+				<h2>Creando botones</h2>
+				<p>
+					Para crear un boton no unicamente se utiliza la etiqueta <span class="text-info">&lt;button&gt;</span>,
+					tambien se puede crear con la etiqueta <span class="text-info">&lt;input&gt;</span> y con el tipo 
+					<code>submit</code> o <code>button</code>, al igual que el estilo de botones se puede dar en enlaces 
+					con la etiqueta <span class="text-info">&lt;a&gt;</span>, y esto se da usando clases 
+					<code>btn</code> y <code>btn-xxxxx</code>, donde xxxxx es el color.
+				</p>
+			</div>
+			<div class="col-6 text-center">
+				<button class="btn btn-primary">Boton</button>
+				<a href="#" class="btn btn-primary">Enlace</a>
+				<input type="button" value="input:button" class="btn btn-primary">
+				<input type="submit" value="input:submit" class="btn btn-primary">
+			</div>
+			<!-- Botones outline -->
+			<div class="col-12">
+				<hr>
+				<h2>Botones outline</h2>
+				<p>
+					A diferencia de los otros botones, estos unicamente mantienen su borde, y se crean con la clase 
+					<code>btn-outline-xxxxx</code>, donde xxxxx es el color, y se ven de la siguiente manera.
+				</p>
+			</div>
+			<div class="col-6 text-center">
+				<button class="btn btn-outline-primary">btn-primary</button>
+				<button class="btn btn-outline-secondary">btn-secondary</button>
+				<button class="btn btn-outline-success">btn-succcess</button>
+				<button class="btn btn-outline-info">btn-info</button>
+				<button class="btn btn-outline-warning">btn-warning</button>
+				<button class="btn btn-outline-danger">btn-danger</button>
+				<button class="btn btn-outline-link">btn-link</button>
+			</div>
+			<!-- Tamaños -->
+			<div class="col-12">
+				<hr>
+				<h2>Tamaño de botones</h2>
+				<p>
+					Boostrap nos permite crear botones con sus distintos tamaños, veasé en <a href="./tablaTamaños.html" class="alert-link">tamaños</a>,
+					con la clase <code>btn-xx</code>, donde xx es el tamaño, tambien si se desea que el boton abarque el 100% del el contenedor,
+					se utiliza la clase <code>btn-block</code>.
+				</p>
+			</div>
+			<div class="col-6 text-center">
+				<button class="btn btn-primary btn-lg">Largo</button>
+				<button class="btn btn-primary btn-md">Medio</button>
+				<button class="btn btn-primary btn-sm">Pequeño</button>
+				<br><br>
+				<button class="btn btn-primary btn-lg btn-block">Bloque</button>
+			</div>
+			<!-- Botones desabilitados -->
+			<div class="col-12">
+				<hr>
+				<h2>Botones desabilitados</h2>
+				<p>
+					Los botones pueden tener un estado desabilitado, que no permite que sean accionados, y ádemas se ven de una manera distinta, 
+					para usarse se utiliza el atributo <span class="text-primary">disabled</span>.
+				</p>
+			</div>
+			<div class="col-6 text-center">
+				<button class="btn btn-primary" disabled >btn-primary</button>
+				<button class="btn btn-secondary" disabled >btn-secondary</button>
+				<button class="btn btn-success" disabled >btn-succcess</button>
+				<button class="btn btn-info" disabled >btn-info</button>
+				<button class="btn btn-warning" disabled >btn-warning</button>
+				<button class="btn btn-danger" disabled >btn-danger</button>
+				<button class="btn btn-link" disabled >btn-link</button>
+			</div>
+		</div>
+		<!-- Parte 2 -->
+		<div class="row justify-content-center">
+			<div class="col-12">
+
+			</div>
+		</div>
+
+	<footer class="row py-5 my-5"></footer>
+
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
