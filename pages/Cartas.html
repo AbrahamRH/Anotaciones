@@ -34,11 +34,12 @@
 					Las cartas se crean mediante la clase <code>card</code> y dentro de ese contenedor se pueden usar las clases <code>card-body</code>, 
 					<code>card-img-top</code> y <code>card-img-bottom</code>.		
 				</p>
-				<p>Dentro de el cuerpo de la carta se pueden usar las clases <code>cart-title</code>, <code>card-subtitle</code>, <code>card-text</code> y <code>card-link</code>.	</p>
-				<p class="text-danger">
-					<strong>Nota*:</strong> 
-					Las imágenes deben colocarse fuera del cuerpo de la página.
-				</p>
+				<p>Dentro de el cuerpo de la carta se pueden usar las clases <code>cart-title</code>, <code>card-subtitle</code>, <code>card-text</code> y <code>card-link</code>.	
+					Y dentro de la etiqueta <code>card</code> se puede cambiar el color del fondo con la clase <code>bg-xxxx</code> donde xxxx es el color, veasé en <a href="./colores.html" class="text-primary">colores</a>.</p>
+					<p class=" alert alert-danger">
+						<strong>Nota*:</strong> 
+						Las imágenes deben colocarse fuera del cuerpo de la página.
+					</p>
 			</div>
 		</div>
 
@@ -47,7 +48,7 @@
 
 			<div class="col-12 col-md-6">
 				<div class="card">
-					<img src="http://lorempixel.com/300/100" alt="" class="card-img-top img-fluid">
+					<img src="http://lorempixel.com/300/200" alt="" class="card-img-top img-fluid">
 					<div class="card-body">
 						<h3 class="card-title">Titulo</h3>
 						<p class="card-text">
@@ -108,10 +109,49 @@
 				</div>
 			</div>
 		</div>
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<br><hr>
+				<h2>Agrupar varias cartas</h2>
+				<p>
+					Para agrupar varias cartas y que esten juntas, se debe crear un contenedor con la clase 
+					<code>card-group</code> y dentro de este contenedor deben colocarse las cartas
+				</p>
+			</div>
+		</div>
+
+		<!-- Grupo de cartas -->
+		<div class="row">
+			<div class=" col">
+				<div class="card-group">
+					<div class="card">
+						<img src="http://lorempixel.com/400/100" alt="">
+						<div class="card-body">
+							<h3 class="card-title">Titulo</h3>
+							<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci?</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="http://lorempixel.com/400/120" alt="">
+						<div class="card-body">
+							<h3 class="card-title">Titulo</h3>
+							<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci?</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="http://lorempixel.com/400/110" alt="">
+						<div class="card-body">
+							<h3 class="card-title">Titulo</h3>
+							<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 	</div>
-
-
 	<footer class="row py-5 my-5"></footer>
 
 <!-- JS, Popper.js, and jQuery -->
