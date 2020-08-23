@@ -45,9 +45,9 @@
 		<div class="row">
 			<div class=" col">
 				<p>
-					<a href="#collapse1" class="btn btn-primary" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="#collapse1">Collapse 1</a>
+					<a href="#collapsef" class="btn btn-primary" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="#collapsef">Collapse 1</a>
 				</p>
-				<div id="collapse1" class="collapse">
+				<div id="collapsef" class="collapse">
 					<div class="card">
 						<div class="card-body">
 							<h2 class="card-title">Collapse</h2>
@@ -58,6 +58,55 @@
 			</div>
 		</div>
 
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<hr>
+				<h2>Acordeón</h2>
+				<p>
+					Para crear un acordeón con el componente collapse,se necesitan añadir varias cartas, una por cada elemento que se deseé mostrar, veasé en 
+					<a href="./Cartas.html" class="text-info">cartas,</a>las cartas necesitan estar dentro de un contenedor con un <span class="text-danger">id</span>.
+					Las cartas necesitan tener un header y cada header su propio <span class="text-danger">id</span> y un boton para seleccionar el contenido desplegable de cada 
+					carta.
+				</p>
+				<p>
+					Este boton necesita tener los atributos de <span class="text-primary">data-toggle="collapse"</span>, <span class="text-primary">data-target="<span class="text-danger">#idContenidoAdesplegar</span>"</span> 
+					<span class="text-primary">aria-expanded="true"</span> y  <span class="text-primary">aria-controls="<span class="text-danger">#idContenidoAdesplegar</span>"</span>.
+				</p>
+			</div>
+		</div>
+
+		<!-- Acordeón -->
+		<div class="row">
+			<div class="col">
+				<div id="acordeon">
+					<!-- Carta 1 -->
+					<div class="card">
+						<div class="card-header" id="header1">
+							<button class="btn btn-link" data-toggle="collapse"  data-target="#collapse1" aria-expanded="true" aria-controls="#collapse1">Collapse 1</button>
+						</div>
+						<div id="collapse1" class="collapse show" data-parent="#acordeon" aria-labelledby="header1">
+							<div class="card-body">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, ad.
+							</div>
+						</div>
+					</div>
+
+					<!-- Carta 2 -->
+					<div class="card">
+						<div class="card-header" id="header2">
+							<button class="btn btn-link" data-toggle="collapse"  data-target="#collapse2" aria-expanded="true" aria-controls="#collapse2">Collapse 1</button>
+						</div>
+						<div id="collapse2" class="collapse" data-parent="#acordeon" aria-labelledby="header2">
+							<div class="card-body">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, ad.
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 
 
 	</div>
