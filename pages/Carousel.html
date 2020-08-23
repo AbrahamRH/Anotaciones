@@ -7,17 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<title></title>
 	<style>
-		.row{	
-			background: #e8e8e8;
-			margin: 40px 0;
-		}
 
-		.columna {
-			background: #f2f2f2;
-			text-align: center;
-			padding: 10px;
-			border: 1px solid #4D5061;
-		}
 
 		p{
 			font-family: Arial, Helvetica, sans-serif;
@@ -28,36 +18,220 @@
 <body>
 	<div class="container">
 
+		<!-- Titulo -->
 		<div class="row">
 			<div class="col">
-				<h1 class="display-4">Tablas</h1>
-				<p>Existen distintos clases que se le pueden aplicar a la tabla como son:</p>
+				<h1 class="display-3">Componentes <small class="text-primary">Carousel</small></h1>
 			</div>
 		</div>
 
+		<!-- Notas -->
 		<div class="row">
 			<div class="col">
-				<br><hr>
-				<h2>Crear pies de imagenes</h2>
+				<hr>
+				<h2>Crear carousel</h2>
 				<p>
-					<span class="text-info">&lt;figure&gt;</span>  <code>figure</code>, parrafo con el texto del pie de imagen.
+					Para poder trabajar con un carousel en boostrap es necesario tener un contenedor con las clases <code>carousel</code> y <code>slide</code> 
+					asi como el atributo <span class="text-primary">data-ride="carousel"</span> y un <span class="text-danger">id</span> propio, en este contenedor es donde se añadiran las imagenes y botones.
+				</p>
+				<p>
+					Dentro del contenedor se debe crear uno nuevo con la clase <code>carousel-inner</code> donde se almacenaran las imágenes en contenedores con la clase 
+					<code>carousel-item</code>, para poder pasar entre imagenes una de ellas debe tener la clase <code>active</code> y ádemas antes del contenedor 
+					<span class="text-secondary">carousel-inner</span>, se debe agregar una lista ordenada <span class="text-info">&lt;ol&gt;</span> con la clase 
+					<code>carousel-indicators</code> donde cada item de la lista debe tener un atributo <span class="text-primary">data-target="#id"</span> y 
+					<span class="text-primary">data-slide-to="<span class="text-warning">#</span>"</span> donde <span class="text-warning">#</span> es el numero de la imagen qe se desea presentar.
 				</p>
 			</div>
 		</div>
 
-		<p class="alert alert-danger">
-			<strong>Nota*:</strong> 
-			Utiliza la herramienta para inspeccionar la página para ver los cambios en la columna de abajo de acuerdo a su tamaño, asi como sus atributos utilizados.
-		</p>
-
-
-
+		<!-- Carousel -->
 		<div class="row">
-			<div class=" col"></div>
+			<div class="col-12">
+				<div class="carousel slide" data-ride="carousel" id="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel" class="active" data-slide-to="0"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+						<li data-target="#carousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="http://lorempixel.com/1800/500" alt="imagen" >
+						</div>
+						<div class="carousel-item">
+							<img src="http://lorempixel.com/1801/500" alt="imagen" >
+						</div>
+						<div class="carousel-item">
+							<img src="http://lorempixel.com/1802/500" alt="imagen" >
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<hr>
+				<h2>Botones en el carousel</h2>
+				<p>
+					Despúes del contenedor <code>carousel-inner</code> es necesario colocar dos links apuntado a el id de el carousel con la clase 
+					<code>carousel-control-xxxx</code> y el atributo <span class="text-primary">data-slide="xxxx"</span> donde xxxx es prev o next según
+					sea el caso. Dentro de cada link es necesario que se cree dos etiquetas <span class="text-info">&lt;span&gt;</span>, dentro de la 
+					primera se deb agregar la clase <code>carousel-control-xxxx-icon</code> y el atributo <span class="text-primary">aria-hidden="true"</span>,
+					en el segundo <span class="text-info">&lt;span&gt;</span> se debe ocupar la clase <code>sr-only</code> y de contenido (anterior/siguiente) según sea el caso. 
+				</p>
+			</div>
+		</div>
+
+		<!-- Carousel flechas -->
+		<div class="row">
+			<div class="col-12">
+				<div class="carousel slide" data-ride="carousel" id="carousel2">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel2" class="active" data-slide-to="0"></li>
+						<li data-target="#carousel2" data-slide-to="1"></li>
+						<li data-target="#carousel2" data-slide-to="2"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="http://lorempixel.com/1800/500" alt="imagen" >
+						</div>
+						<div class="carousel-item">
+							<img src="http://lorempixel.com/1801/500" alt="imagen" >
+						</div>
+						<div class="carousel-item">
+							<img src="http://lorempixel.com/1802/500" alt="imagen" >
+						</div>
+					</div>
+					<!-- Flecha izquierda -->
+					<a href="#carousel2" class="carousel-control-prev" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+					<!-- Flecha derecha -->
+					<a href="#carousel2" class="carousel-control-next" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<hr>
+				<h2>Carousel con texto</h2>
+				<p>Para agregar texto dentro de un carousel, dentro de cada <code>carousel-item</code> se debe agregar un contenedor con las clases
+				<code>carousel-caption</code> y <code>d-block</code>, dentro de este contenedor se pueden agregar, titulos y párrafos para incluir texto.</p>
+			</div>
+		</div>
+
+		<!-- Carousel texto -->
+		<div class="row">
+			<div class="col-12">
+				<div class="carousel slide" data-ride="carousel" id="carousel3">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel3" class="active" data-slide-to="0"></li>
+						<li data-target="#carousel3" data-slide-to="1"></li>
+						<li data-target="#carousel3" data-slide-to="2"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="carousel-caption d-block">
+								<h4>Titulo</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+							</div>
+							<img src="http://lorempixel.com/1800/500" alt="imagen" >
+						</div>
+						<div class="carousel-item">
+							<div class="carousel-caption d-block">
+								<h4>Titulo</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+							</div>
+							<img src="http://lorempixel.com/1801/500" alt="imagen" >
+						</div>
+						<div class="carousel-item">
+							<div class="carousel-caption d-block">
+								<h4>Titulo</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+							</div>
+							<img src="http://lorempixel.com/1802/500" alt="imagen" >
+						</div>
+					</div>
+					<!-- Flecha izquierda -->
+					<a href="#carousel3" class="carousel-control-prev" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+					<!-- Flecha derecha -->
+					<a href="#carousel3" class="carousel-control-next" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Código -->
+		<div class="row">
+			<div class="col">
+				<hr>
+				<h2>Código completo</h2>
+				<p>Para ahorrar un poco de tiempo, aqui esta el código de el ultimo carousel con todos los elementos.</p>
+				<p>
+					<pre>
+						<code>
+&lt;div class="carousel slide" data-ride="carousel" id="carousel3"&gt;
+	&lt;ol class="carousel-indicators"&gt;
+		&lt;li&gt; data-target="#carousel3" class="active" data-slide-to="0"&gt;&lt;/li&gt;
+		&lt;li&gt; data-target="#carousel3" data-slide-to="1"&gt;&lt;/li&gt;
+		&lt;li&gt; data-target="#carousel3" data-slide-to="2"&gt;&lt;/li&gt;
+	&lt;/ol&gt;
+
+	&lt;div class="carousel-inner"&gt;
+		&lt;div class="carousel-item active"&gt;
+			&lt;div class="carousel-caption d-block"&gt;
+				&lt;h4&gt;>Titulo&lt;/h4&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;img src="http://lorempixel.com/1800/500" alt="imagen" &gt;
+		&lt;/div&gt;
+		&lt;div class="carousel-item"&gt;
+			&lt;div class="carousel-caption d-block"&gt;
+				&lt;h4>Titulo&lt;/h4&gt;
+				&lt;p>Lorem ipsum dolor sit amet consectetur adipisicing.&lt;/p&gt;
+			&lt;/div>
+			&lt;img src="http://lorempixel.com/1801/500" alt="imagen" &gt;
+		&lt;/div&gt;
+		&lt;div class="carousel-item"&gt;
+			&lt;div class="carousel-caption d-block">
+				&lt;h4>Titulo&lt;/h4&gt;
+				&lt;p>Lorem ipsum dolor sit amet consectetur adipisicing.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;img src="http://lorempixel.com/1802/500" alt="imagen" &gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- Flecha izquierda --&gt;
+	&lt;a href="#carousel3" class="carousel-control-prev" data-slide="prev"&gt;
+		&lt;span class="carousel-control-prev-icon" aria-hidden="true">&lt;/span&gt;
+		&lt;span class="sr-only">Anterior&lt;/span&gt;
+	&lt;/a&gt;
+	&lt;!-- Flecha derecha --&gt;
+	&lt;a href="#carousel3" class="carousel-control-next" data-slide="next"&gt;
+		&lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+		&lt;span class="sr-only">Anterior&lt;/span&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+						</code>
+					</pre>
+				</p>
+			</div>
 		</div>
 	</div>
-
-
 	<footer class="row py-5 my-5"></footer>
 
 <!-- JS, Popper.js, and jQuery -->
