@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>Collapse</title>
+	<style>
+		
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+		</style>
+</head>
+<body>
+	<div class="container">
+		
+		<!-- Titulo -->
+		<div class="row">
+			<div class="col">
+				<h1 class="display-3">Componentes <small class="text-primary">Collapse</small></h1>
+				<p>
+					El componente de collapse siver, para mostrar contenido unicamente al activar un boton o un enlace de una carta u otro objeto.
+				</p>
+			</div>
+		</div>
+
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<hr>
+				<h2>Crear un componente collapse</h2>
+				<p>
+					Para crear un componente collapse, se necesita tener un enlace o boton referenciado a el id de el contenedor que tiene la información,
+					este link tambien debe tener los atributos <span class="text-primary">data-toggle="collapse"</span>, <span class="text-primary">role="button"</span>, 
+					<span class="text-primary">aria-expanded="false"</span> y <span class="text-primary">aria-controls="<span class="text-danger">id</span>".</span>
+				</p>
+				<p>Finalmenente al contenedor de la información que se mostrara se le coloca la clase <code>collapse</code></p>
+			</div>
+		</div>
+
+		<!-- Collapse button -->
+		<div class="row">
+			<div class=" col">
+				<p>
+					<a href="#collapse1" class="btn btn-primary" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="#collapse1">Collapse 1</a>
+				</p>
+				<div id="collapse1" class="collapse">
+					<div class="card">
+						<div class="card-body">
+							<h2 class="card-title">Collapse</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, commodi!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+	<footer class="row py-5 my-5"></footer>
+
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
