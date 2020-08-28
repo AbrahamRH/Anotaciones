@@ -226,6 +226,68 @@
 			</div>
 		</div>
 
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<p class="text-justify">
+					Para poder compactar uestros formularios, podemos utilizar el grid de Bootstrap de la misma forma que se hace normalmente 
+					creando filas y columnas, la única diferencia, es que dentro de la fila y columna de todo el contenido principal, la que contiene a el 
+					<span class="text-info">&lt;form&gt;</span>, se van a crear nuevas filas en los contenedores con la clase <code>form-group</code>, de esta manera 
+					anidaremos las filas y columnas entre ellas para usar la grid.
+				</p>
+				<p>Como unicamente se utilza la grid de Bootstrap, tambien se puede adaptar para cada tamaño de distitos dispositivos con las clases, vease en <a href="./tablaTamaños.html">Tamaños</a>.</p>
+				<p class="alert alert-danger">
+					<strong>Nota*:</strong> 
+					Ya que las row estaran el los contenedores del <code>form-group</code>, se podrán tantos elementos como sea necesario en ellos y no unicamente uno por cada contenedor.
+				</p>
+			</div>
+		</div>
+
+		<!-- Formulario Grid -->
+		<div class="row">
+			<div class="col">
+				<hr>
+				<form action="">
+					<div class="form-group row">
+						<div class="col-12 col-md-6">
+							<label for="nombre">Nombre:</label>
+							<input type="text" name="Nombre" id="nombre" placeholder="Nombre" class="form-control">
+						</div>
+						<div class="col-12 col-md-6">
+							<label for="pass">Contraseña:</label>
+							<input type="password" name="pass" id="pass" placeholder="Contraseña" class="form-control">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-12 col-md-8">
+							<label for="Com">Comentarios:</label>
+							<textarea name="Com" id="Com" class="form-control"></textarea>
+						</div>
+						<div class="col-12 col-md-4">
+							<label for="pais">Pais:</label>
+							<select name="pais" id="pais" class="form-control">
+								<option value="mexico">Mexico</option>
+								<option value="EU">Estados Unidos</option>
+								<option value="canada">Canad</option>
+							</select>
+						</div>
+					</div>
+					<div class=" form-group row text-center">
+						<div class="col-12">
+							<label for="acepto2" class="form-check-label mb-2">
+								<input type="checkbox" name="acepto" id="acepto2" class="form-check-input">Acepto terminos y condiciones.
+							</label>
+							<div class="row">
+								<div class="col-12">
+									<button class="btn btn-primary">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
 	</div>
 	<footer class="row py-5 my-5"></footer>
 
