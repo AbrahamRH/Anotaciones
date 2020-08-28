@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title></title>
+	<style>
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+		</style>
+</head>
+<body>
+	<div class="container">
+		
+		<!-- Titulo -->
+		<div class="row">
+			<div class="col">
+				<h1 class="display-3">Formularios</h1>
+				<hr>
+			</div>
+		</div>
+
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<p>
+					Para brindarle estilos a nuestros formularios, es necesario agregar un contenedor dentro de la etiqueta 
+					<span class="text-info">&lt;form&gt;</span> con la clase <code>form-group</code> esto se hace para cada elementro que 
+					se desee colocar en el formulario, cada elemento con su propio contenedor, ádemas, cada elemento debe tener la clase 
+					<code>form-control</code>.
+					En cada elemento (input) de un formulario, se agrega la clase <code>form-control</code> abarcar el 100% de el espacio.
+				</p>
+			</div>
+		</div>
+		
+		<!-- Formulario 1 -->
+		<div class="row">
+			<div class="col">
+				<hr>
+				<form action="">
+					<!-- input text -->
+					<div class="form-group">
+						<label for="nombre">Nombre:</label>
+						<input type="text" name="Nombre" id="nombre" placeholder="Nombre" class="form-control">
+					</div>
+					<!-- Password -->
+					<div class="form-group">
+						<label for="pass">Contraseña:</label>
+						<input type="password" name="pass" id="pass" placeholder="Contraseña" class="form-control">
+					</div>
+					<!-- Text area -->
+					<div class="form-group">
+						<label for="Com">Comentarios:</label>
+						<textarea name="Com" id="Com" class="form-control"></textarea>
+					</div>
+					<!-- Select -->
+					<div class="form-group">
+						<label for="pais">Pais:</label>
+						<select name="pais" id="pais" class="form-control">
+							<option value="mexico">Mexico</option>
+							<option value="EU">Estados Unidos</option>
+							<option value="canada">Canad</option>
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<p class="text-justify">
+					Para los elementos checkbox y los radio buttons, el contenedor debe llamarse <code>form-check</code>, en lugar de <code>form-group</code>, 
+					y a los  <span class="text-info">&lt;label&gt;</span>, deben de tener la clase <code>form-check-label</code>, y a cada 
+					elemento de checkbox, se le agrega la clase <code>form-check-input</code>.
+				</p>
+			</div>
+		</div>
+
+		<!-- Checkbox y Radio buttons-->
+		<div class="row">
+			<div class="col">
+				<form action="">
+					<div class="form-check">
+						<label for="sexo" class="form-check-label">
+							<input type="radio" name="sexo" id="sexo" class="form-check-input">Hombre
+						</label>
+					</div>
+					<div class="form-check">
+						<label for="sexo2" class="form-check-label">
+							<input type="radio" name="sexo" id="sexo2" class="form-check-input">Mujer
+						</label>
+					</div>
+					<div class="form-check">
+						<label for="acepto" class="form-check-label">
+							<input type="checkbox" name="acepto" id="acepto" class="form-check-input">Acepto terminos y condiciones.
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<footer class="row py-5 my-5"></footer>
+
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
