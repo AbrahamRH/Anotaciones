@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- CSS only -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<title></title>
+	<title>Formularios</title>
 	<style>
 		p{
 			font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +27,7 @@
 		<!-- Notas -->
 		<div class="row">
 			<div class="col">
-				<p>
+				<p class="text-justify">
 					Para brindarle estilos a nuestros formularios, es necesario agregar un contenedor dentro de la etiqueta 
 					<span class="text-info">&lt;form&gt;</span> con la clase <code>form-group</code> esto se hace para cada elementro que 
 					se desee colocar en el formulario, cada elemento con su propio contenedor, ádemas, cada elemento debe tener la clase 
@@ -108,7 +108,7 @@
 		<div class="row">
 			<div class="col">
 				<hr>
-				<h1 class="display-3">Formularios <small class="text-muted">inline</small></h1>
+				<h1 class="display-3">Formularios <small class="text-primary">inline</small></h1>
 				<hr>
 			</div>
 		</div>
@@ -118,8 +118,101 @@
 			<div class="col">
 				<p>
 					Para crear un formulario de tipo inline, se le debe agregar la clase <code>form-inline</code> a la etiqueta 
-					<span class="text-info">&lt;form&gt;</span>, destro de esta etiqueta se añaden los elementos normalmente sin un contenedor intermedio.
+					<span class="text-info">&lt;form&gt;</span>, destro de esta etiqueta se añaden los elementos normalmente sin un contenedor intermedio 
+					a excepción de los checkbox o radio buttons.
 				</p>
+			</div>
+		</div>
+		
+		<!-- Form inline -->
+		<div class="row">
+			<div class="col">
+				<form action="" class="form-inline text-center">
+					<input type="text" name="Nombre" id="nombre" placeholder="Nombre" class="form-control mr-3">
+					<input type="password" name="pass" id="pass" placeholder="Contraseña" class="form-control mr-3">
+					<div class="form-check">
+						<label for="recordar" class="form-check-label mr-3">
+							<input type="checkbox" name="recordar" id="recordar" class="form-check-input">Recordar sesión
+						</label>
+					</div>
+					<button class="btn btn-primary">Iniciar sesión</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<hr>
+				<h2>Input groups</h2>
+				<p class="text-justify">
+					Los grupos de inputs, sirven para colocar labels en los formularios de tipo input, de una manera más estética, 
+					estos se crean encerrando los inputs en un contenedor con la clase <code>input-group</code> en la que estará el 
+					el elemento input con la clase <code>form-control</code> y junto con otro contenedor con la clase <code>input-group-xxxxxx</code> donde xxxxxx es 
+					<span class="text-primary">prepend</span> o <span class="text-primary">append</span>, para antes o despues, segun sea el caso.
+					Finalizando, dentro de este contenedor debera ir una etiqueta  <span class="text-info">&lt;span&gt;</span> siendo este el label del 
+					input con la clase <code>input-group-text</code>.
+				</p>
+			</div>
+		</div>
+	
+		<!-- Prepend y append -->
+		<div class="row">
+			<div class="col">
+				<form action="">
+					<!-- Prepend -->
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Prepend</span>
+						</div>
+						<input type="text" name="text" id="text" class="form-control">
+					</div>
+					<!-- Append -->
+					<div class="input-group mb-3">
+						<input type="text" name="text" id="text" class="form-control">
+						<div class="input-group-append">
+							<span class="input-group-text">Prepend</span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+			
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<p class="text-justify">
+					Tambien se pueden poner las clases <code>input-group-lg</code> y <code>input-group-sm</code> para modificar los tamaños, estas clases deben agregarse en el contenedor principal de el input.
+				</p>
+				<p>Ádemas se pueden poner botones en lugar de label que pueden usarse para barras de busqueda, unicamente agregando un boton con sus clases,veasé en <a href="./Botones.html" class="text-primary">Botones</a>, en lugar de el span.</p>
+			</div>
+		</div>
+	
+		<!-- Tamaños y boton -->
+		<div class="row">
+			<div class="col">
+				<form action="">
+					<!-- Tamaños -->
+					<div class="input-group input-group-lg mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">largo</span>
+						</div>
+						<input type="text" name="text" id="text" class="form-control">
+					</div>
+					<div class="input-group input-group-sm mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Pequeño</span>
+						</div>
+						<input type="text" name="text" id="text" class="form-control">
+					</div>
+					<!-- Boton -->
+					<div class="input-group mb-3">
+						<input type="text" name="text" id="text" class="form-control">
+						<div class="input-group-append">
+							<button class="btn btn-primary">Boton</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
