@@ -140,7 +140,7 @@
 			</div>
 		</div>
 
-		<!-- Input groups Notas -->
+		<!-- Titulo Input groups Notas -->
 		<div class="row">
 			<div class="col">
 				<hr>
@@ -217,7 +217,7 @@
 			</div>
 		</div>
 
-		<!-- Grid en los formularios-->
+		<!--Titulo Grid en los formularios-->
 		<div class="row">
 			<div class="col">
 				<hr>
@@ -230,7 +230,7 @@
 		<div class="row">
 			<div class="col">
 				<p class="text-justify">
-					Para poder compactar uestros formularios, podemos utilizar el grid de Bootstrap de la misma forma que se hace normalmente 
+					Para poder compactar nuestros formularios, podemos utilizar el grid de Bootstrap de la misma forma que se hace normalmente 
 					creando filas y columnas, la única diferencia, es que dentro de la fila y columna de todo el contenido principal, la que contiene a el 
 					<span class="text-info">&lt;form&gt;</span>, se van a crear nuevas filas en los contenedores con la clase <code>form-group</code>, de esta manera 
 					anidaremos las filas y columnas entre ellas para usar la grid.
@@ -288,7 +288,7 @@
 			</div>
 		</div>
 
-		<!-- Checkboex y radio buttons-->
+		<!--Titulo Checkboex y radio buttons-->
 		<div class="row">
 			<div class="col">
 				<hr>
@@ -378,6 +378,95 @@
 				</div>
 			</div>
 		</div>
+
+		<!--Titulo perzonalización -->
+		<div class="row">
+			<div class="col">
+				<hr>
+				<h1 class="display-3">Formularios <small class="text-primary">personalizados</small></h1>
+				<hr>
+			</div>
+		</div>
+
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<p class="text-justify">
+					Boostrap nos permine brindarle una perzonalizacion mas grande a los formularios, para esto en cada elemento que se perzonalize
+					lleva la clase <code>custom-control</code> al igual que la clase <code>custom-xxxxxxx</code> donde xxxxxxx es el elemento 
+					que se desea personalizar.
+				</p>
+				<h4>Checkboxes y radio button</h4>
+				<p class="text-justify">
+					Para personalizar estos elementos es necesario colocarle en sus contenedores las clases	<code>custom-control</code> (
+					tambien se pueden crear estos elementos enn la misma linea con la clase <code>custom-control-inline</code> y 
+					<code>custom-checkbox</code>, despues en el input la clase <code>custom-control-input</code> y el el label, 
+					<code>custom-control-label</code> quedando de la siguiente manera.
+				</p>
+			</div>
+		</div>
+
+		<!-- Radio y checkbox personalizado -->
+		<div class="row">
+			<div class="col">
+				<form action="">
+					<div class="row">
+						<div class="col-6">
+							<h5>Normal</h5>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" name="" id="checkbox" class="custom-control-input">
+								<label for="checkbox" class="custom-control-label">Checkbox</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" name="" id="radio" class="custom-control-input">
+								<label for="radio" class="custom-control-label">Label</label>
+							</div>
+						</div>
+						<div class="col-6">
+							<h5>Inline</h5>
+							<div class="custom-control custom-control-inline custom-checkbox">
+								<input type="checkbox" name="" id="checkbox2" class="custom-control-input">
+								<label for="checkbox2" class="custom-control-label">Checkbox</label>
+							</div>
+							<div class="custom-control custom-control-inline custom-radio">
+								<input type="radio" name="" id="radio2" class="custom-control-input">
+								<label for="radio2" class="custom-control-label">Label</label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<h4>Select</h4>
+				<p class="text-justify">
+					Para los elementos select se utiliza la clase <code>custom-select</code> en el mismo elemento, y ademas podemos cambiar su tamaño
+					con las clases <code>custom-select-xx</code> donde xx es el tamaño, veasé en <a href="./tablaTamaños.html" class="text-primary">tamaños</a>.
+					(Solo pequeño y largo).
+				</p>
+			</div>
+		</div>
+
+		<!-- Select perzonalizado -->
+		<div class="row">
+			<div class="col">
+				<form action="">
+					<select name="a" id="a" class="custom-select custom-select-lg">
+						<option value="op1">Opcion 1</option>
+					</select>
+					<select name="a" id="a" class="custom-select">
+						<option value="op1">Opcion 1</option>
+					</select>
+					<select name="a" id="a" class="custom-select custom-select-sm">
+						<option value="op1">Opcion 1</option>
+					</select>
+				</form>
+			</div>
+		</div>
+
 
 	</div>
 	<footer class="row py-5 my-5"></footer>
