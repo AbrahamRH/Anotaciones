@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>Jumbotron</title>
+	<style>
+		p:not(.lead){
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+		</style>
+</head>
+<body>
+	<div class="container">
+		
+		<!-- Titulo -->
+		<div class="row">
+			<div class="col">
+				<h1 class="display-3">Componentes <small class="text-primary">Jumbotron</small></h1>
+				<hr>
+			</div>
+		</div>
+		
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<p>
+					Los jumbotron son una de las clases más famosas de boostrap, aunque unicamente se trate de un contenedor, este se crea 
+					con la clase <code>jumbotron</code>, en este contenedor podemos agregar cualquier contenido, como titulos, párrafos, 
+					botones ó hasta imágenes, todos estos elementos se pueden perzonalizar como ya hemos visto,cambiando su tipografia o 
+					posicionamiento dentro del jumbotron.
+				</p>
+			</div>
+		</div>
+		
+		<!-- Jumbotron normal -->
+		<div class="row">
+			<div class=" col">
+				<div class="jumbotron">
+					<h2 class="display-3">Titulo</h2>
+					<p class="lead">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi architecto libero veniam,
+						 distinctio quae necessitatibus. Voluptates quibusdam, quod dignissimos quidem quam esse debitis rerum deleniti.
+					</p>
+					<a href="#" class="btn btn-primary">Boton</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<p>
+					Si se desea que el jumbotron abarque todo el espacio horizontal, se puede dejar fuera del contenedor con la clase 
+					<code>container</code> y asi abarcar todo el espacio, y si el contenido del jumbotron se quiere centra, unicamente se necesita 
+					colocar un nuevo contenedor <code>container</code> dentro del contenedor con el <code>jumbotron</code>.
+				</p>
+			</div>
+		</div>
+	</div>
+		
+		<div class="jumbotron">
+			<h2 class="display-3">Titulo</h2>
+			<p class="lead">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi architecto libero veniam,
+				 distinctio quae necessitatibus. Voluptates quibusdam, quod dignissimos quidem quam esse debitis rerum deleniti.
+			</p>
+			<a href="#" class="btn btn-primary">Boton</a>
+		</div>
+
+		<div class="jumbotron">
+			<div class="container">
+				<h2 class="display-3">Titulo</h2>
+				<p class="lead">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi architecto libero veniam,
+					 distinctio quae necessitatibus. Voluptates quibusdam, quod dignissimos quidem quam esse debitis rerum deleniti.
+				</p>
+				<a href="#" class="btn btn-primary">Boton</a>
+			</div>
+		</div>
+
+		
+
+
+
+	<footer class="row py-5 my-5"></footer>
+
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
