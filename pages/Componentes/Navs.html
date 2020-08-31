@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>Navs</title>
+	<style>
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+		.newNav a{
+			color:#FFF;
+			padding: 15px;
+		}
+		.newNav a:hover{
+			color:#FFF;
+			padding: 15px;
+			background-color: rgba(255,255,255,.1);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+		<!-- Titulo Navs-->
+		<div class="row">
+			<div class="col">
+				<h1 class="display-3">Componentes <small class="text-primary">Navs</small></h1>
+				<hr>
+			</div>
+		</div>
+		
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<p class="text-justify">
+					La creación de barras de navegación se puede hacer de distintas manera, una de ellas es con listas, para ello es necesario 
+					agregar una lista con la etiqueta <span class="text-info">&lt;ul&gt;</span> que tendra la clase <code>nav</code> y cada elemento de 
+					la lista <span class="text-info">&lt;li&gt;</span> debera tener la clase <code>nav-item</code> y de contenido todos los hipervínculos 
+					con la clase <code>nav-link</code>. Tambien ya con la estructura de una barra de navegación, nosotros podemos agregarle estilos con CSS accediendo 
+					a las clases antes mencionadas.
+				</p>
+				<p class="text-justify">
+					Además de crear barras de navegación con listas, tambien se puede hacer con las etiquetas <span class="text-info">&lt;nav&gt;</span>, agregandole 
+					la misma clase <code>nav</code> y dentro los hipervínculos con la clase <code>nav-link</code>.
+				</p>
+				<p class="alert alert-info">
+					<strong>Nota*:</strong>
+					Se pueden crear navs verticales utilizando flexbox y con la clase <code>flex-column</code> en el contenedor con la clase <code>nav</code>.
+				</p>
+			</div>
+		</div>
+
+		<!-- Navs simples -->
+		<div class="row">
+			<div class="col-6">
+				<h3>Barra de navegación con <span class="text-info">&lt;ul&gt;</span></h3>
+				<ul class="nav">
+					<li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Proximamente</a></li>
+				</ul>
+			</div>
+			<div class="col-6">
+				<h3>Barra de navegación con <span class="text-info">&lt;ul&gt;</span> y CSS</h3>
+				<ul class="nav newNav bg-dark">
+					<li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Proximamente</a></li>
+				</ul>
+			</div>
+			<div class="w-100"><br></div>
+			<div class="col-5">
+				<h3>Barra de navegación con <span class="text-info">&lt;nav&gt;</span></h3>
+				<nav class="nav">
+					<a href="#" class="nav-link">Menu</a>
+					<a href="#" class="nav-link">Blog</a>
+					<a href="#" class="nav-link disabled">Proximamente</a>
+				</nav>
+			</div>
+			<div class="col-7">
+				<h3>Barra de navegación con <span class="text-info">&lt;nav&gt;</span> y <code>flex-column</code></h3>
+				<nav class="nav flex-column">
+					<a href="#" class="nav-link">Menu</a>
+					<a href="#" class="nav-link">Blog</a>
+					<a href="#" class="nav-link disabled">Proximamente</a>
+				</nav>
+			</div>
+		</div>
+		
+
+
+
+	</div>
+	<footer class="row py-5 my-5"></footer>
+
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
