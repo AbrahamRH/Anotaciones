@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title></title>
+	<style>
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+		</style>
+</head>
+<body>
+	<div class="container">
+		
+		<!-- Titulo -->
+		<div class="row">
+			<div class="col">
+				<h1 class="display-3">Componentes <small class="text-primary">Dropdown</small></h1>
+				<hr>
+			</div>
+		</div>
+		
+		<!-- Notas -->
+		<div class="row">
+			<div class="col">
+				<p>
+					Para la creación de botones dropdown, se necesita un botón, veasé <a href="./Botones.html">Botones</a>, con un ID 
+					la clase <code>dropdown-toggle</code> y tambien necesita el atributo <span class="text-primary">&lt;data-toggle="dropdown"&gt;</span>, 
+					despues de crear el botón, para agregar el contenido, es necesario crear un contenedor con la clase <code>dropdown-menu</code> con el 
+					atributo <span class="text-primary">&lt;aria-labelledby="ID"&gt;</span>. Dentro de este contenedor puede ir un encabezado con la clase 
+					<code>dropdown-header</code>, y cada elemento debera llevar la clase <code>dropdown-item</code>.
+				</p>
+				<p>
+					Existen más clases para utilizar como la clase <code>dropdown-divider</code> que es utilizada para dividir los elementos 
+					que contiene el dropdown.
+				</p>
+			</div>
+		</div>
+		
+		<!-- Dropdown -->
+		<div class="row">
+			<div class=" col text-center">
+				<button class="btn btn-primary dropdown-toggle" id="Dropdown1" data-toggle="dropdown">Categorias</button>
+				<div class="dropdown-menu" aria-labelledby="Dropdown1">
+					<h3 class="dropdown-header">Encabezado</h3>
+					<a href="#" class="dropdown-item">HTML</a>
+					<a href="#" class="dropdown-item">CSS</a>
+					<a href="#" class="dropdown-item">JS</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item">Boostrap</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Notas -->
+		<div class="row mt-3">
+			<div class="col">
+				<p class="text-justify">
+					Se pueden crear botones de dropdown con dos botones para cambiar la forma en que se ve, para esto 
+					hay que crear un grupo de botones, vease en <a href="./Botones.html">Botones</a>, el primero sera 
+					un boton normal con el titulo del dropdown, pero el segundo debera tener las clases <code>dropdown-toggle</code> 
+					y <code>dropdown-toggle-split</code>, su ID y el atributo <span class="text-primary">&lt;data-toggle="dropdown"&gt;</span> y de contenido
+					de este segundo botón debera ir un span con la clase <code>sr-only</code> y un titulo.
+				</p>
+				<p>Para agregarle el contenido, se hace igual que un dropdown normal.</p>
+			</div>
+		</div>
+
+		<!-- Dropdown -->
+		<div class="row">
+			<div class=" col text-center">
+				<div class="btn-group">
+					<button class="btn btn-dark">Categorias</button>
+					<button class="btn btn-warning dropdown-toggle" id="Dropdown2" data-toggle="dropdown">
+						<span class="sr-only">Menu</span>
+					</button>
+					<div class="dropdown-menu" aria-labelledby="Dropdown2">
+						<h3 class="dropdown-header">Encabezado</h3>
+						<a href="#" class="dropdown-item">HTML</a>
+						<a href="#" class="dropdown-item">CSS</a>
+						<a href="#" class="dropdown-item">JS</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item">Boostrap</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="row py-5 my-5"></footer>
+
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
