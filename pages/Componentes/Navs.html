@@ -146,6 +146,94 @@
 			</div>
 		</div>
 
+		<!-- Notas -->
+		<div class="row mt-3">
+			<div class="col">
+				<p class="text-justify">
+					Las tabs pueden combinarse con más componentes de boostrap como lo son los dropdowns, para crear menus desplegables, para eso a 
+					cada <code>nav-item</code>, tambien debe agregar los contenedores y clases crearlo, ver <a href="./Dropdown.html">dropdown buttons</a>, 
+					la diferencia es agregar nuevos atributos que son <span class="text-primary">role="button"</span> y <span class="text-primary">aria-haspopup="true"</span> .
+				</p>
+			</div>
+		</div>
+
+		<!-- Tabs Dropdowns-->
+		<div class="row">
+			<div class="col-6">
+				<nav class="nav nav-tabs">
+					<div class="dropdown nav-item">
+						<a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown" id="cursos" role="button" aria-haspopup="true">Cursos</a>
+						<div class="dropdown-menu" aria-labelledby="cursos">
+							<h3 class="dropdown-header">Desarrollo web</h3>
+							<a href="#" class="dropdown-item">HTML</a>
+							<a href="#" class="dropdown-item">CSS</a>
+							<a href="#" class="dropdown-item">JavaScript</a>
+						</div>
+					</div>
+					<a href="#" class="nav-link">Blog</a>
+					<a href="#" class="nav-link">Proximamente</a>
+					<a href="#" class="nav-link">Noticias</a>
+				</nav>
+			</div>
+		</div>
+
+		<!-- NoTAS -->
+		<div class="row mt-3">
+			<div class="col">
+				<hr>
+				<h2>Paneles</h2>
+				<p class="text-justify">
+					Uno de los mejores usos para los tabs son los paneles, estos se crean (de preferencia con listas), en caca uno de los hipervínculos se debe poner 
+					un ID, a cada hipervínculo se le tiene que agregar el atributo <span class="text-primary">data-toggle="tab"</span>, despues de el contenedor con la clase 
+					<code>nav-tabs</code> (o despues de la lista), se debe crear un contenedor con la clase <code>tab-content</code> en donde se agregara el contenido de cada panel.
+				</p>
+				<p class="text-justify">
+					En el contenedor <code>tab-content</code> se debe agregar un contenedor por cada panel con la clase <code>tab-pane</code> con el ID ( el que se coloco en los 
+					hipervínculos) y el atrituto <span class="text-primary">role="tabpane"</span>.
+				</p>
+			</div>
+		</div>
+
+		<!-- Tabs -->
+		<div class="row">
+			<div class="col-12">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a href="#tab1" class="nav-link active" data-toggle="tab">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#tab2" class="nav-link" data-toggle="tab">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a href="#tab3" class="nav-link" data-toggle="tab">Noticias</a>
+					</li>
+				</ul>
+				<div class="tab-content mt-3">
+					<div class="tab-pane active" id="tab1" role="tabpanel">
+						<h2>Panel 1</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dicta magnam, accusamus facilis sed officia 
+							voluptatum omnis quidem recusandae minima id velit fugit quo ullam nemo rem dolore similique est!
+						</p>
+					</div>
+					<div class="tab-pane" id="tab2" role="tabpanel">
+						<h2>Panel 2</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dicta magnam, accusamus facilis sed officia 
+							voluptatum omnis quidem recusandae minima id velit fugit quo ullam nemo rem dolore similique est!
+						</p>
+					</div>
+					<div class="tab-pane" id="tab3" role="tabpanel">
+						<h2>Panel 3</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dicta magnam, accusamus facilis sed officia 
+							voluptatum omnis quidem recusandae minima id velit fugit quo ullam nemo rem dolore similique est!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 	<footer class="row py-5 my-5"></footer>
 
