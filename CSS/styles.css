@@ -6,3 +6,12 @@ p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 }
+
+.btn-purple {
+	background-color: #553C7B;
+	color: #FFF;
+}
+.btn-purple:hover {
+	background-color: #553c7bb2;
+	color: #FFF;
+}
