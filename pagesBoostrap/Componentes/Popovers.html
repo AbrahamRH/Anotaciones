@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="../../CSS/styles.css">
-	<title>Paginación</title>
+	<title>Popovers</title>
 	<style>
 		p{
 			font-family: Arial, Helvetica, sans-serif;
@@ -90,7 +90,7 @@
 		<!-- Titulo -->
 		<div class="row">
 			<div class="col">
-				<h1 class="display-3">Componentes <small class="text-primary">Paginación</small></h1>
+				<h1 class="display-3">Componentes <small class="text-primary">Popovers</small></h1>
 				<hr>
 			</div>
 		</div>
@@ -100,145 +100,44 @@
 			<div class="col">
 				<hr>
 				<p class="text-justify">
-					Para crear este componente se necesita de una etiqueta <span class="text-info">&lt;nav&gt;</span>, dentro tendra una lista
-					desordenada con la clase <code>pagination</code>, a cada elemento <span class="text-info">&lt;li&gt;</span> tendra una clase 
-					<code>page-item</code> y dentro tendra un hipervínculo con la clase <code>page-link</code> y dentro la numeración.
+					Los popovers se crean con un boton simple, ver <a href="./Botones.html">Botones</a>, y con distintos atributos 
+					los cuales son:
+				</p>
+				<ul>
+					<li class="text-primary">data-containter="body"</li>
+					<li class="text-primary">data-placement="top"<span class="text-dark"> Aqui debera ir especificada la posición top/bottom/left/right.</span></li>
+					<li class="text-primary">data-toggle="popover"</li>
+					<li class="text-primary">title="titulo del popover"</li>
+					<li class="text-primary">data-content="Contenido del popover"</li>
+				</ul>
+				<p class="text-justify">
+					Pero para el correcto funcionamiento del popover, es necesario agregar un script de jquery el cual es:
+				</p>
+			</div>
+			<div class="col-12">
+				<p class="d-flex justify-content-center">
+					<pre><code>
+					$(function(){
+						$('[data-toggle="popover"]').popover();
+					})
+					</code></pre>
 				</p>
 			</div>
 		</div>
 		
-		<!-- Paginacion simple -->
-		<div class="row">
-			<div class="col-4 text-center">
-					<nav class="text-center">
-						<ul class="pagination">
-							<li class="page-item">
-								<a href="#" class="page-link">1</a>
-							</li>
-							<li class="page-item">
-								<a href="#" class="page-link">2</a>
-							</li>
-							<li class="page-item">
-								<a href="#" class="page-link">3</a>
-							</li>
-						</ul>
-					</nav>
-			</div>
-		</div>
-
-		<!-- Notas -->
+		<!-- Popover -->
 		<div class="row mt-3">
 			<div class="col">
-				<p class="text-justify">
-					Tambien es posible agregar botones para avanzar de página retroceder, para esto es necerio agregar un componente 
-					<span class="text-info">&lt;li&gt;</span> antes y despúes de las páginas (el elemento de la izq, debe tener la clase <code>disabled</code>) 
-					cada elemento <span class="text-info">&lt;li&gt;</span> debe tener un <span class="text-info">&lt;span&gt;</span> con la 
-					clase <code>page-link</code> y el atributo <span class="text-primay">aria-hidden="true"</span>, dentro de este span 
-					se coloca la indicación al usuario <span class="text-muted">Anterios/Siguiente</span>.
-				</p>
-				<p class="text-justify">
-					Tambien es posible cambiar los tamaños de la paginación, colocando en el contenedor ul la clase 
-					<code>pagination-xx</code> donde xx es el tamaño. ver <a href="../tablaTamaños.html">Tamaños</a>.
-				</p>
-			</div>
-		</div>
-
-		<!-- Paginacion señales -->
-		<div class="row">
-			<div class="col-4 text-center">
-					<nav class="text-center">
-						<ul class="pagination">
-							<li class="page-item disabled">
-								<span class="page-link " aria-hidden="true">&laquo;Anterior</span>
-							</li>
-							<li class="page-item active">
-								<a href="#" class="page-link">1</a>
-							</li>
-							<li class="page-item">
-								<a href="#" class="page-link">2</a>
-							</li>
-							<li class="page-item">
-								<a href="#" class="page-link">3</a>
-							</li>
-							<li class="page-item">
-								<span class="page-link" aria-hidden="true">Siguiente &laquo;</span>
-							</li>
-						</ul>
-					</nav>
-			</div>
-		</div>
-
-		<!-- Notas -->
-		<div class="row mt-3">
-			<div class="col">
-				<p class="text-justify">
-					Para alinear este componente es necesario volver a el contenedor <span class="text-info">&lt;ul&gt;</span> un contenedor flexbox con la clase 
-					<code>d-flex</code> y las clases <code>justify-content-start</code>, <code>justify-content-center</code> o <code>justify-content-end</code>, 
-					ver <a href="../AlineamientoHorizontal.html">Alineción horizontal</a>.
-				</p>
-			</div>
-		</div>
-
-		<!-- Paginacion alineación -->
-		<div class="row">
-			<div class="col-12 text-center">
-					<nav>
-						<ul class="pagination d-flex justify-content-start">
-							<li class="page-item disabled">
-								<span class="page-link " aria-hidden="true">&laquo;Anterior</span>
-							</li>
-							<li class="page-item active">
-								<a href="#" class="page-link">1</a>
-							</li>
-							<li class="page-item">
-								<a href="#" class="page-link">2</a>
-							</li>
-							<li class="page-item">
-								<a href="#" class="page-link">3</a>
-							</li>
-							<li class="page-item">
-								<span class="page-link" aria-hidden="true">Siguiente &laquo;</span>
-							</li>
-						</ul>
-					</nav>
-					<nav>
-						<ul class="pagination d-flex justify-content-center">
-							<li class="page-item disabled">
-								<span class="page-link " aria-hidden="true">&laquo;Anterior</span>
-							</li>
-							<li class="page-item active">
-								<a href="#" class="page-link">1</a>
-							</li>
-							<li class="page-item">
-								<a href="#" class="page-link">2</a>
-							</li>
-							<li class="page-item">
-								<a href="#" class="page-link">3</a>
-							</li>
-							<li class="page-item">
-								<span class="page-link" aria-hidden="true">Siguiente &laquo;</span>
-							</li>
-						</ul>
-					</nav>
-					<nav>
-						<ul class="pagination d-flex justify-content-end">
-							<li class="page-item disabled">
-								<span class="page-link " aria-hidden="true">&laquo;Anterior</span>
-							</li>
-							<li class="page-item active">
-								<a href="#" class="page-link">1</a>
-							</li>
-							<li class="page-item">
-								<a href="#" class="page-link">2</a>
-							</li>
-							<li class="page-item">
-								<a href="#" class="page-link">3</a>
-							</li>
-							<li class="page-item">
-								<span class="page-link" aria-hidden="true">Siguiente &laquo;</span>
-							</li>
-						</ul>
-					</nav>
+				<div class="d-flex justify-content-center">
+					<button class="btn btn-primary btn-lg mx-1" data-containter="body" data-placement="top" data-toggle="popover"
+					title="titulo del popover" data-content="Lorem ipsum dolor sit amet consectetur.">Arriba</button>
+					<button class="btn btn-primary btn-lg mx-1" data-containter="body" data-placement="bottom" data-toggle="popover"
+					title="titulo del popover" data-conte mx-1nt="Lorem ipsum dolor sit amet consectetur.">Abajo</button>
+					<button class="btn btn-primary btn-lg" data-containter="body" data-placement="right" data-toggle="popover"
+					title="titulo del popover" data-content="Lorem ipsum dolor sit amet consectetur.">Derecha</button>
+					<button class="btn btn-primary btn-lg mx-1" data-containter="body" data-placement="left" data-toggle="popover"
+					title="titulo del popover" data-content="Lorem ipsum dolor sit amet consectetur.">Izquierda</button>
+				</div>
 			</div>
 		</div>
 
@@ -249,5 +148,10 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script>
+	$(function(){
+		$('[data-toggle="popover"]').popover();
+	})
+	</script>
 </body>
 </html>
