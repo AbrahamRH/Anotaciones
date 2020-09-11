@@ -11,6 +11,18 @@
 			font-family: Arial, Helvetica, sans-serif;
 			font-size: 20px;
 		}
+
+		body {
+			position: relative;
+		}
+		.navS a {
+			color: #FFF;
+			padding: 15px;
+		}
+		.navS .active, .navS a:hover{
+			background-color: rgba(255, 255, 255, .1);
+		}
+
 	</style>
 </head>
 <header>
@@ -95,7 +107,7 @@
 		<!-- Titulo -->
 		<div class="row">
 			<div class="col">
-				<h1 class="display-3">Componentes <small class="text-primary">Barras de progreso</small></h1>
+				<h1 class="display-3">Componentes <small class="text-primary">Scrollspy</small></h1>
 				<hr>
 			</div>
 		</div>
@@ -103,16 +115,32 @@
 		<!-- Notas -->
 		<div class="row">
 			<div class="col">
-				
+				<p class="text-justify">
+					Para poder tener nuestro contenido con un componente Scrollspy es necesario crear una barra de navegación con
+					en la que acomodemos los links del contenido, 
+				</p>
+				<p class="alert alert-info">
+					<strong>Nota*:</strong> 
+					El <span class="text-muted">body</span> de la página debe tener una posición relativa.
+				</p>
 			</div>
 		</div>
 		
-		<!-- Progress bar -->
+		
+		<!-- nav -->
 		<div class="row mt-3">
 			<div class="col">
-				
+				<div id="navS">
+					<ul class="navS nav nav-bar-inverse bg-primary">
+						<li><a href="" class="nav-link active">Seccion 1</a></li>
+						<li><a href="" class="nav-link">Seccion 2</a></li>
+						<li><a href="" class="nav-link">Seccion 3</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
+
+		
 
 	</div>
 	<footer class="row py-5 my-5"></footer>
