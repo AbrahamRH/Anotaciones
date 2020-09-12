@@ -23,6 +23,14 @@
 			background-color: rgba(255, 255, 255, .1);
 		}
 
+		.seccion {
+			margin-bottom: 900px;
+		}
+
+		.seccion .columna {
+			padding-top: 100px;
+		}
+
 	</style>
 </head>
 <header>
@@ -101,7 +109,7 @@
 		</div>
 	</nav>
 </header>
-<body>
+<body data-spy="scroll" data-target="#navS">
 	<div class="container">
 		
 		<!-- Titulo -->
@@ -117,7 +125,13 @@
 			<div class="col">
 				<p class="text-justify">
 					Para poder tener nuestro contenido con un componente Scrollspy es necesario crear una barra de navegación con
-					en la que acomodemos los links del contenido, 
+					en la que acomodemos los links del contenido, este contenedor debe tener un ID, despúes se crea una fila por cada sección que se deseé tener en la página 
+					cada una de estas filas (<code>row</code>), debe tener un ID al que se le hará referencia en el navbar.
+				</p>
+				<p class="text-justify">
+					Para utilizar el componente de scrollspy en la etiqueta <span class="text-info">&lt;body&gt;</span> 
+					se necesita colocar el atributo <span class="text-primary">data-spy="scroll"</span> <span class="text-primary">data-target="{#ID del conenedor del navbar}"</span> y 
+					de esa forma podremos usar ese componente.
 				</p>
 				<p class="alert alert-info">
 					<strong>Nota*:</strong> 
@@ -131,12 +145,41 @@
 		<div class="row mt-3">
 			<div class="col">
 				<div id="navS">
-					<ul class="navS nav nav-bar-inverse bg-primary">
-						<li><a href="" class="nav-link active">Seccion 1</a></li>
-						<li><a href="" class="nav-link">Seccion 2</a></li>
-						<li><a href="" class="nav-link">Seccion 3</a></li>
+					<ul class="navS nav nav-bar-inverse bg-primary fixed-bottom">
+						<li><a href="#seccion1" class="nav-link active">Seccion 1</a></li>
+						<li><a href="#seccion2" class="nav-link">Seccion 2</a></li>
+						<li><a href="#seccion3" class="nav-link">Seccion 3</a></li>
 					</ul>
 				</div>
+			</div>
+		</div>
+
+		<div class="row seccion" id="seccion1">
+			<div class="col-12 columna">
+				<h2>Seccion 1</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet voluptas incidunt accusantium repellendus quibusdam itaque asperiores impedit 
+					quis aperiam? Dolore eligendi assumenda laborum dicta mollitia, in saepe aperiam aliquid nostrum.
+				</p>
+			</div>
+		</div>
+
+		<div class="row seccion" id="seccion2">
+			<div class="col-12 columna">
+				<h2>Seccion 2</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet voluptas incidunt accusantium repellendus quibusdam itaque asperiores impedit 
+					quis aperiam? Dolore eligendi assumenda laborum dicta mollitia, in saepe aperiam aliquid nostrum.
+				</p>
+			</div>
+		</div>
+		<div class="row seccion" id="seccion3">
+			<div class="col-12 columna">
+				<h2>Seccion 3</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet voluptas incidunt accusantium repellendus quibusdam itaque asperiores impedit 
+					quis aperiam? Dolore eligendi assumenda laborum dicta mollitia, in saepe aperiam aliquid nostrum.
+				</p>
 			</div>
 		</div>
 
