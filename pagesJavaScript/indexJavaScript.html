@@ -3,29 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- CSS only -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" href="./CSS/styles.css">
-	<title>Manual</title>
+	<link rel="stylesheet" href="../CSS/styles.css">
+	<title>JavaScript</title>
 </head>
 <header>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-expand-xs navbar-dark bg-dark fixed-top">
 		<div class="container">
-			<a href="./index.html" class="navbar-brand">Menú</a>
+			<a href="../index.html" class="navbar-brand">Menú principal</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="menu">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item dropdown">
-						<a href="./pagesBoostrap/indexBoostrap.html" class="nav-link">
-							Boostrap
+						<a href="../indexBoostrap.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" id="componentes">
+							Variables
 						</a>
+						<div class=" dropdown-menu" aria-labelledby="componentes">
+							<a href="./Tablas.html" class="dropdown-item">Var</a>
+							<a href="./colores.html" class="dropdown-item">Colores</a>
+							<a href="./Imagenes.html" class="dropdown-item">Imagenes</a>
+							<a href="./mediaObject.html" class="dropdown-item">Media Object</a>
+							<a href="./BloquesCodigo.html" class="dropdown-item">Bloques de código</a>
+							<a href="./ResponsiveUtilities.html" class="dropdown-item">Responsive utilities</a>
+						</div>
 					</li>
-					<li class="nav-item dropdown">
-						<a href="./pagesJavaScript/indexJavaScript.html" class="nav-link ">
-							JavaScript
-						</a>
+					<li nav-item>
+						<a href="./variables.html" class="nav-link">Variables</a>
 					</li>
 				</ul>
 			</div>
@@ -34,23 +39,22 @@
 </header>
 <body>
 	<div class="container">
+		
 		<!-- Titulo -->
 		<div class="row">
 			<div class="col">
-				<h1 class="display-3">Manual de desarrollo <small class="text-primary">Bienvenida</small></h1>
+				<h1 class="display-3">Manual de desarrollo <small class="text-primary">JavaScript</small></h1>
 				<hr>
 			</div>
 		</div>
-		
 		<div class="row">
-			<div class="col-12">
+			<div class="col">
 				<p class="text-justify">
-					Este sitio web fue construido como "cuaderno de notas" de distintos cursos para aprender desarrollo web, 
-					El propósito de este sitio web es brindar información para el uso de distintas tecnologias para el desarrollo web,
-					como lo son Bootstrap o JavaScript.
+					
 				</p>
 			</div>
 		</div>
+		
 
 
 
