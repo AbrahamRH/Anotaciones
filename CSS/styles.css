@@ -15,3 +15,16 @@ p {
 	background-color: #553c7bb2;
 	color: #FFF;
 }
+
+
+.text {
+	color:#c5a526;
+}
+
+.code {
+	color: #5cd36c;
+}
+
+.palabrasReservadas {
+	color: #A569BD;
+}
