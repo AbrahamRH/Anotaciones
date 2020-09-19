@@ -78,6 +78,14 @@
 			</div>
 		</div>
 
+		<!-- Titulo tipos -->
+		<div class="row">
+			<div class="col">
+				<h1 class="display-3">Variables <small class="text-primary">tipos</small></h1>
+				<hr>
+			</div>
+		</div>
+
 		<div class="row">
 			<div class="col-12">
 				<ul class="nav nav-tabs">
@@ -120,6 +128,13 @@
 									<a href="#metodo2" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo2">charAt()</a>
 									<a href="#metodo3" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo3">includes()</a>
 									<a href="#metodo4" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo4">concat()</a>
+									<a href="#metodo5" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo5">trim()</a>
+									<a href="#metodo6" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo6">replace()</a>
+									<a href="#metodo7" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo7">slice()</a>
+									<a href="#metodo8" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo8">substring()</a>
+									<a href="#metodo9" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo9">repeat()</a>
+									<a href="#metodo10" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo10">split()</a>
+									<a href="#metodo11" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo11">toLowerCase() y toUpperCase()</a>
 								</div>
 							</div>
 							<div class="col-8">
@@ -160,11 +175,80 @@
 											<code>let</code> cadena <span class="code">=</span> <code>String(<span class="text">"Esta es una cadena de caracteres simple"</span>)</code>;<br>
 											cadena.<code>includes(<span class="text">"es"</span>)</code>; <span class="text-muted">// true</span><br>
 											cadena.<code>includes(<span class="text">"E"</span>)</code>; <span class="text-muted">// true</span><br>
-											cadena.<code>includees(<span class="text">"felicidades"</span>)</code>; <span class="text-muted">// false</span><br>
+											cadena.<code>includes(<span class="text">"felicidades"</span>)</code>; <span class="text-muted">// false</span><br>
 										</p>
 									</div>
 									<div class="tab-pane fade show" id="metodo4" role="tabpanel" aria-labelledby="metodo4">
-										<h4><code>includes()</code></h4>
+										<h4><code>concat()</code></h4>
+										<p class="text-justify">
+											Este método es utilizado para poder combinar o unir distintas cadenas de caracteres.   
+										</p>
+										<p class="text-justify">
+											<h4>Ejemplos</h4>
+											<code>let</code> cadena <span class="code">=</span> <code>String(<span class="text">"Esta es una cadena de caracteres simple"</span>)</code>;<br>
+											<code>let</code> cadena2 <span class="code">=</span> <code>String(<span class="text">" Esta es otra cadena de caracteres"</span>)</code>;<br>
+											cadena.<code>concat(<span class="text">cadena2</span>)</code>; <span class="text-muted">// "Esta es una cadena de caracteres simple Esta es otra cadena de caracteres"</span><br>
+										</p>
+										<p class="text-justify">
+											Existen otras formas de llevar a cabo esta misma finalidad de las siguientes maneras:
+										</p>
+										<p class="text-justify">
+											<h4>Ejemplos</h4>
+											<code>let</code> cadena <span class="code">=</span> <code>String(<span class="text">"Esta es una cadena de caracteres simple"</span>)</code>;<br>
+											<code>let</code> cadena2 <span class="code">=</span> <code>String(<span class="text">" Esta es otra cadena de caracteres"</span>)</code>;<br>
+											cadena <code>+</code> cadena2</code>; <span class="text-muted">// "Esta es una cadena de caracteres simple Esta es otra cadena de caracteres"</span><br>
+											console.<code>log(<span class="text-dark">cadena <code>,</code> cadena2</span>)</code>; <span class="text-muted">// Para imprimir la misma cadena concatenada en la misma consola"</span><br>
+										</p>
+									</div>
+									<div class="tab-pane fade show" id="metodo5" role="tabpanel" aria-labelledby="metodo5">
+										<h4><code>trim()</code></h4>
+										<p class="text-justify">
+											Este método nos ayuda a eliminar los espacios al inicio y al final de la cadena de texto que se indique, si se desea 
+											eliminar los espacios unicamente al inicio o unicamente al final, se pueden utilizar variaciones de este método que los cuales son
+											<code>trimStart()</code> para eliminar los espacios al inicio y <code>trimEnd()</code> para eliminar los espacios al final.
+										</p>
+										<p class="text-justify">
+											<h4>Ejemplos</h4>
+											<code>let</code> cadena <span class="code">=</span> <code>String(<span class="text">"&nbsp;&nbsp;&nbsp;&nbsp;HOLA&nbsp;&nbsp;&nbsp;&nbsp;"</span>)</code>;<br>
+											cadena.<code>trim()</code>; <span class="text-muted">// "HOLA"</span><br>
+											cadena.<code>trimStart()</code>; <span class="text-muted">// "HOLA &nbsp;&nbsp;&nbsp;&nbsp;"</span><br>
+											cadena.<code>trimEnd()</code>; <span class="text-muted">// "&nbsp;&nbsp;&nbsp;&nbsp;HOLA"</span><br>
+											cadena.<code>trimStart().trimEnd()</code>; <span class="text-muted">// "HOLA"</span><br>
+										</p>
+									</div>
+									<!-- TODO Terminar el contenido de los siguientes métodos -->
+									<div class="tab-pane fade show" id="metodo6" role="tabpanel" aria-labelledby="metodo6">
+										<h4><code>replace()</code></h4>
+										<p>
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
+										</p>
+									</div>
+									<div class="tab-pane fade show" id="metodo7" role="tabpanel" aria-labelledby="metodo7">
+										<h4><code>slice()</code></h4>
+										<p>
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
+										</p>
+									</div>
+									<div class="tab-pane fade show" id="metodo8" role="tabpanel" aria-labelledby="metodo8">
+										<h4><code>substring()</code></h4>
+										<p>
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
+										</p>
+									</div>
+									<div class="tab-pane fade show" id="metodo9" role="tabpanel" aria-labelledby="metodo9">
+										<h4><code>repeat()</code></h4>
+										<p>
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
+										</p>
+									</div>
+									<div class="tab-pane fade show" id="metodo10" role="tabpanel" aria-labelledby="metodo10">
+										<h4><code>split()</code></h4>
+										<p>
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
+										</p>
+									</div>
+									<div class="tab-pane fade show" id="metodo11" role="tabpanel" aria-labelledby="metodo11">
+										<h4><code>split()</code></h4>
 										<p>
 											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
 										</p>
