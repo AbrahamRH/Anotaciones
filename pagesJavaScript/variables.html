@@ -96,10 +96,10 @@
 						<h2 class="text-primary">Strings</h2>
 						<p class="text-justify">
 							Las variables de tipo String (o cadena de caracteres), se utilizan para guardar caracteres, palabras o frases de texto completas; las Strings en 
-							JavaScript pueden ser creadas de tres diferentes formas: 
+							JavaScript pueden ser creadas de tres diferentes formas y todas ellas tienen las mismas caracteristicas de comportarse como arreglos en el posicionamiento de los caracteres: 
 						</p>
 						<p class="text-justify">
-							<code>let</code> cadena1 <span class="code">=</span> <span class="text">"Esta es una cadena de caracteres simple"</span>;<br>
+							<code>let</code> cadena1 <span class="code">=</span> <code><span class="text">"Esta es una cadena de caracteres simple"</span></code>;<br>
 							<code>let</code> cadena2 <span class="code">=</span> <code>String(<span class="text">"Esta es una cadena de caracteres simple"</span>)</code>;<br>
 							<code>let</code> cadena2 <span class="code">= new</span> <code>String(<span class="text">"Esta es una cadena de caracteres simple"</span>)</code>;
 						</p>
@@ -116,27 +116,55 @@
 						<div class="row">
 							<div class=" col-4">
 								<div class="list-group" id="lista" role="tablist">
-									<a href="#elemento1" class="list-group-item list-group-item-action active" data-toggle="tab" role="tab" aria-controls="elemento1"><code>indexOf()</code></a>
-									<a href="#elemento2" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="elemento2">item</a>
-									<a href="#elemento3" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="elemento3">item</a>
+									<a href="#metodo1" class="list-group-item list-group-item-action active" data-toggle="tab" role="tab" aria-controls="metodo1">indexOf()</a>
+									<a href="#metodo2" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo2">charAt()</a>
+									<a href="#metodo3" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo3">includes()</a>
+									<a href="#metodo4" class="list-group-item list-group-item-action" data-toggle="tab" role="tab" aria-controls="metodo4">concat()</a>
 								</div>
 							</div>
 							<div class="col-8">
 								<div class="tab-content" id="nav-tabContent">
-									<div class="tab-pane fade show active" id="elemento1" role="tabpanel" aria-labelledby="elemento1">
+									<div class="tab-pane fade show active" id="metodo1" role="tabpanel" aria-labelledby="metodo1">
 										<h4><code>indexOf()</code></h4>
-										<p>
-											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
+										<p class="text-justify">
+											Este método devuelve la posición de la letra que estes buscando o la posición de la primer letra de la parabra que se quiera encontrar, si no se 
+											encuentra la letra o la palabra retorna un <span class="text-secondary">-1</span>.
+										</p>
+										<p class="text-justify">
+											<h4>Ejemplos</h4>
+											<code>let</code> cadena <span class="code">=</span> <code>String(<span class="text">"Esta es una cadena de caracteres simple"</span>)</code>;<br>
+											cadena.<code>indexOf(<span class="text">"es"</span>)</code>; <span class="text-muted">// 5</span><br>
+											cadena.<code>indexOf(<span class="text">"E"</span>)</code>; <span class="text-muted">// 0</span><br>
+											cadena.<code>indexOf(<span class="text">"felicidades"</span>)</code>; <span class="text-muted">// -1</span><br>
 										</p>
 									</div>
-									<div class="tab-pane fade show" id="elemento2" role="tabpanel" aria-labelledby="elemento2">
+									<div class="tab-pane fade show" id="metodo2" role="tabpanel" aria-labelledby="metodo2">
 										<h4><code>charAt()</code></h4>
-										<p>
-											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
+										<p class="text-justify">
+											Este método devuelve el carácter en la posición que se indique.
+										</p>
+										<p class="text-justify">
+											<h4>Ejemplo</h4>
+											<code>let</code> cadena <span class="code">=</span> <code>String(<span class="text">"Esta es una cadena de caracteres simple"</span>)</code>;<br>
+											cadena.<code>charAt(<span class="text">3</span>)</code>; <span class="text-muted">// a</span><br>
 										</p>
 									</div>
-									<div class="tab-pane fade show" id="elemento3" role="tabpanel" aria-labelledby="elemento3">
-										<h4>Titulo #3</h4>
+									<div class="tab-pane fade show" id="metodo3" role="tabpanel" aria-labelledby="metodo3">
+										<h4><code>includes()</code></h4>
+										<p class="text-justify">
+											Este método se encarga de devolver un valor booleano (verdadero o falso) si la palabra, letra ó frase se encuentran dentro de la cadena de 
+											caracteres. 
+										</p>
+										<p class="text-justify">
+											<h4>Ejemplos</h4>
+											<code>let</code> cadena <span class="code">=</span> <code>String(<span class="text">"Esta es una cadena de caracteres simple"</span>)</code>;<br>
+											cadena.<code>includes(<span class="text">"es"</span>)</code>; <span class="text-muted">// true</span><br>
+											cadena.<code>includes(<span class="text">"E"</span>)</code>; <span class="text-muted">// true</span><br>
+											cadena.<code>includees(<span class="text">"felicidades"</span>)</code>; <span class="text-muted">// false</span><br>
+										</p>
+									</div>
+									<div class="tab-pane fade show" id="metodo4" role="tabpanel" aria-labelledby="metodo4">
+										<h4><code>includes()</code></h4>
 										<p>
 											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
 										</p>
