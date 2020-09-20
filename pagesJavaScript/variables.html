@@ -115,7 +115,7 @@
 							Estas son las 3 maneras de declarar e inicializar una variable del tipo String, lo más importante a destacar aqui, es que la primera y segunda linea 
 							crean cadenas "primitivas" que unicamente guardan el texto, mientras que la tercera forma guarda la cadena como un objeto.
 						</p>
-						<h2>Metodos utilies para String</h2>
+						<h2>Métodos utilies para String</h2>
 						<hr>
 						<p class="text-justify">
 							Las String tienen algunos métodos muy útiles, entre ellos estan:
@@ -254,19 +254,39 @@
 									<div class="tab-pane fade show" id="metodo9" role="tabpanel" aria-labelledby="metodo9">
 										<h4><code>repeat()</code></h4>
 										<p>
-											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
+											Con este método podemos repetir una cadena de caracteres un número definido de veces.
+										</p>
+										<p class="text-justify">
+											<p class="text-justify">
+												<h4>Ejemplos</h4>
+												<code>let</code> cadena <span class="code">=</span> <span class="text">" Hola"</span><code>.repeat(<span class="text-dark">3</span>)</code>;<br>
+												console.<code>log(<span class="text-dark">cadena</span>)</code>; <span class="text-muted">// " Hola Hola Hola"</span>
+											</p>
 										</p>
 									</div>
 									<div class="tab-pane fade show" id="metodo10" role="tabpanel" aria-labelledby="metodo10">
 										<h4><code>split()</code></h4>
-										<p>
-											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
+										<p class="text-justify">
+											Este método es uno de los más utiles, y a que nos permite separar una cadena de caracteres en distintas partes foromando un arreglo de strings, 
+											esto lo hace por medio de un carácter que finciona como separador y que es seleccionado por el desarrollador.
+										</p>
+										<p class="text-justify">
+											<h4>Ejemplos</h4>
+											<code>let</code> cadena <span class="code">=</span> <code>String(<span class="text">"uno,dos,tres"</span>)</code>;<br>
+											<code>let</code> array <span class="code">=</span> cadena.<code>split(<span class="text">","</span>)</code>; <span class="text-muted">// ["uno", "dos", "tres"]</span><br>
 										</p>
 									</div>
 									<div class="tab-pane fade show" id="metodo11" role="tabpanel" aria-labelledby="metodo11">
-										<h4><code>split()</code></h4>
-										<p>
-											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloremque? Numquam velit quaerat saepe sed?
+										<h4><code>toUpperCase() toLowerCase()</code></h4>
+										<p class="text-justify">
+											Estos son dos métodos diferentes que trabajan de manera simular, el método <code>toUpperCase()</code> se encarga de poner en mayúsculas una cadena 
+											de texto, mientras que <code>toLowerCase()</code> se encarga de ponerlo en minúsculas.
+										</p>
+										<p class="text-justify">
+											<h4>Ejemplos</h4>
+											<code>let</code> cadena <span class="code">=</span> <code>String(<span class="text">"Esta Es Una Cadena De Caracteres"</span>)</code>;<br>
+											cadena.<code>toUpperCase()</code>; <span class="text-muted">// "ESTA ES UNA CADENA DE CARACTERES"</span><br>
+											cadena.<code>toLowerCase()</code>; <span class="text-muted">// "esta es una cadena de caracteres"</span><br>
 										</p>
 									</div>
 								</div>
